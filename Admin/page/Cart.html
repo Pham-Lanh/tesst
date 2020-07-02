@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../../css/all.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sigmar+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One+SC" />
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+<!-- line modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="lineModalLabel"><i class="fas fa-user-tag"> Cart</i></h3>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- content goes here -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputUsername">UserName</label>
+                        <input type="text" class="form-control" id="exampleInputUsername" placeholder="Username" value="" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" value="" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputNumberphone">Number Phone</label>
+                        <input type="text" class="form-control" id="exampleInputNumberphone" placeholder="Your Number Phone" value=""><p class="wr5"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputFullname">Full Name</label>
+                        <input type="text" class="form-control" id="exampleInputFullname" placeholder="Your fullname" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputBirthday">Birthday</label>
+                        <input type="date" class="form-control" id="exampleInputBirthday" placeholder="Your birthday" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress">Address</label>
+                        <input type="text" class="form-control" id="exampleInputAddress" placeholder="Your Address" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAvatar">Avatar</label>
+                        <input type="file" class="form-control" id="exampleInputAvatar" placeholder="Your Avatar" value="">
+                    </div>
+                    <button id="savedata" type="button" class="btn btn-default" data-save="" data-active=""> Save</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--//////////////////////////-->
+<!--//////delete modal/////////-->
+<div class="modal fade" id="squarespaceModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 class="aa"> <i class="fas fa-trash-alt"></i> Do you want to delete ?</h1>
+            <span>
+                <button id="savedata1" type="submit" class="btn btn-success " data-save="">Yes</button>
+                <button  id="savedata2" type="button" class=" btn btn-danger" data-dismiss="modal"><span aria-hidden="true">No</span><span class="sr-only">Close</span></button>
+
+            </span>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--////////////////////////-->
+
+
+<div class="nav-side-menu">
+    <div class="brand"><h1>Festival Batch150</h1></div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+            <li>
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                </a>
+
+
+
+            <li>
+                <a href="Profile.html">
+                    <i class="fa fa-user fa-lg"></i> Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="Admin.html">
+                    <i class="fa fa-users fa-lg"></i> Users
+                </a>
+            </li>
+            <li>
+                <a href="Infotopay.html">
+                    <i class="fas fa-sign-out-alt"></i> Infortopay
+                </a>
+            </li>
+            <li>
+                <a href="Cart.html">
+                    <i class="fas fa-shopping-cart"></i> Manage Cart
+                </a>
+            </li>
+            <li>
+                <a href="Article.html">
+                    <i class="fas fa-newspaper"></i> Update Article
+                </a>
+            </li>
+            <li>
+                <a href="Feedback.html">
+                    <i class="fas fa-comment-alt"></i> Feedback
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-sign-out-alt"></i> Sign out
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="conten">
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand"></a>
+
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Cart</li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="#">Users</a></li>
+            <li>            
+                <!-- <div class="input-group">
+                    <input id="seatch" type="search" class="form-control" placeholder="Search...">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text searchbt"><i class="fas fa-search searchbt"></i></span>
+                    </div>
+                </div> -->
+            </li>
+        </ol>
+        <div class="input-group">
+            <input id="seatch" type="search"  placeholder="Search...">
+            <div class="input-group-prepend">
+                <span class="input-group-text searchbt"><i class="fas fa-search searchbt"></i></span>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="accordion container md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+        <!--<div class="card">-->
+            <!--<div class="card-header" role="tab" id="headingTwo1">-->
+                <!--<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"-->
+                <!--aria-expanded="false" aria-controls="collapseTwo1">-->
+                    <!--<h5 class="mb-0">-->
+                        <!--WHEN WILL I GET MY LOAD IN DETAILS?-->
+                    <!--</h5>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordionEx1">-->
+                <!--<div class="card-body">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-12" id="ShownextFa">-->
+                            <!--asdsadsad-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                <!--</div>-->
+        <!--</div>-->
+
+
+    <!--</div>-->
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCV5u83vTvZOYvSO74gUxDZzVt6OGBaPoU",
+        authDomain: "festival-44896.firebaseapp.com",
+        databaseURL: "https://festival-44896.firebaseio.com",
+        projectId: "festival-44896",
+        storageBucket: "festival-44896.appspot.com",
+        messagingSenderId: "597549870722"
+    };
+
+</script>
+<script src="../js/Cart.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

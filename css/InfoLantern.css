@@ -1,0 +1,75 @@
+/*VIDEO*/
+.infovi{
+    margin-top: 1%;
+}
+.infovi >video{
+    width: 100%;
+}
+/*NEWS*/
+.infofes{
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: whitesmoke;
+}
+.newstitle{
+    background-color: #71DD8A;
+}
+.title{
+    padding: 2%;
+    padding-left: 7%;
+}
+.title h2{
+    color: #6F50BF;
+    font-weight: bold;
+}
+.map >img{
+    padding: 7%;
+    width: 100%;
+}
+#newsnote{
+    margin-top: 3%;
+    font-weight: bold;
+}
+.marginnews{
+    margin-top: 3%;
+}
+.lantern >img{
+    width: 100%;
+}
+.lantern h4{
+    margin-left: 5%;
+    color: #8c37ba;
+}
+
+/*SERVICE*/
+.ser{
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: whitesmoke;
+}
+.ser >h2{
+    font-weight: bold;
+    color: #6F50BF;
+}
+.serimg >img{
+    width: 100%;
+}
+.sertext >h3{
+    margin-bottom: 3%;
+}
+.row2{
+    background-color: darkgreen;
+}
+.serimg a{
+    /*color: white;*/
+    /*font-style: italic;*/
+    /*text-decoration: underline;*/
+}
+.serimg:hover{
+    /*background: rgba(235, 97, 29, 0);*/
+    /*transition: all 1.5s;*/
+    /*border: solid 1px white;*/
+    /*border-radius: 5px;*/
+}

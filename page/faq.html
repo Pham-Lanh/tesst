@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>FAQs Festival</title>
+
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/faq.css">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bowlby+One" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Damion" />
+
+</head>
+
+<body>
+
+    <!--CHANGE PASSWORD MODAL-->
+    <div class="modal fade" id="squarespaceModal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true" style="z-index: 99999999999999999999999999999999">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <h1> <i class="fas fa-user-tag"></i> Change Password</h1>
+                <form class="email-login">
+                    <div class="u-form-group uform">
+                        <h3>Current Password</h3>
+                        <input id="oldPassword" type="password" placeholder="Password" />
+                    </div>
+                    <div class="u-form-group uform">
+                        <h3>New Password</h3>
+                        <input id="newPassword" type="password" placeholder="New password" />
+                    </div>
+                    <div class="u-form-group uform">
+                        <h3>Confirm Password</h3>
+                        <input id="confPassword" type="password" placeholder=" password" />
+                    </div>
+                    <div class="u-form-group uform">
+                        <button id="changepassword" type="button" class="b1" data-toggle="modal" data-dismiss="modal"
+                            data-target="#squarespaceModal1">Save</button>
+                    </div>
+                    <div class="u-form-group uform">
+                        <button data-dismiss="modal">Close</button>
+                    </div>
+
+
+                </form>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--///////////////////modal-->
+    <div class="modal fade" id="squarespaceModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true" style="z-index: 99999999999999999999999999999999">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h1 class="bowby1"></h1>
+                <span>
+                    <button id="savedata1" type="submit" class="btn btn-success " data-dismiss="modal"
+                        data-save="">OK</button>
+
+                </span>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--////////login////-->
+    <div class="modal fade  " id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="lineModalLabel"><i class="fas fa-user-tag"> login</i></h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                            class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <!--///-->
+                    <div class="lb-header">
+                        <a href="#" class="active" id="login-box-link">Login</a>
+                        <a href="#" id="signup-box-link">Sign Up</a>
+                    </div>
+                    <div class=" social-login">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                            <span> facebook</span>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google"></i>
+                            <span> Google</span>
+
+                        </a>
+                    </div>
+                    <form class="email-login">
+                        <div class="u-form-group">
+                            <input id="user1" type="text" placeholder="Username" />
+                        </div>
+                        <div class="u-form-group">
+                            <input id="pass1" type="password" placeholder="Password" />
+                        </div>
+                        <div class="u-form-group">
+                            <button type="button" class="b1" data-toggle="modal" data-target="#squarespaceModal1">Log
+                                in</button>
+                            <button id="b2" data-dismiss="modal" class="login b2">Close</button>
+                        </div>
+                        <div class="u-form-group">
+                            <a href="#" class="forgot-password">Forgot password?</a>
+                        </div>
+                    </form>
+                    <form class="email-signup">
+                        <div class="u-form-group">
+                            <input id="user2" type="text" placeholder="Username" />
+                            <p class="wr1"></p>
+
+                        </div>
+                        <div class="u-form-group">
+                            <input id="pass2" type="password" placeholder="Password" />
+                        </div>
+                        <div class="u-form-group">
+                            <input id="email" type="email" placeholder="email" />
+                            <p class="wr2"></p>
+                        </div>
+                        <div class="u-form-group">
+                            <input id="sdt" type="number" placeholder="numberphone" />
+                        </div>
+                        <div class="u-form-group">
+                            <input id="passC" type="password" placeholder="Confirm Password" />
+                        </div>
+                        <div class="u-form-group">
+                            <button type="button" id="signup">Sign Up</button>
+                            <button class="login b2" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </form>
+                    <!--///-->
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/////////////-->
+    <!--//////back to top////////-->
+    <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-arrow-circle-up" id="circle"></i></a>
+
+
+    <!--LOGIN NOW + NAVBAR + SLIDE + HEADER-->
+    <div class="conten">
+        <div class="container sign " id="sign">
+            <a data-toggle="modal" data-target="#squarespaceModal" class="login" id="login" href="#">Login now</a>
+        </div>
+    </div>
+
+    <!--NAVBAR-->
+    <div class="container navhome has-animation animation-rtl" data-delay="2000">
+        <nav class="navbar navbar-expand-lg navbar-light bg-co navhome">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <!--<img class="brandICON  infinite animated  bounce delay-2s " src="../images/brand/a3.png">-->
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  mr-sm-3" href="Home_2.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-sm-3" href="Nextfestival.html">Next Festivals <i><span
+                                    class="badge badge-secondary" style="background-color: #ff0000">HOT</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-sm-3" href="Garelly.html">Garelly </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mr-sm-3 dropdown-toggle activenav" href="#" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="AboutUs.html">About Us</a>
+                            <a class="dropdown-item activenav" href="faq.html">FAQs</a>
+                            <a class="dropdown-item" href="Feedback.html">Feedback</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mr-sm-3">
+                        <a class="nav-link dropdown-toggle user" href="#" id="UserLo" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="updateProfile.html">Update Profile</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#squarespaceModal2"
+                                href="#">Change Password</a>
+                            <a class="dropdown-item" href="ManagerCart.html">Manage Cart</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="logout" href="#">Logout</a>
+                        </div>
+
+                    <li>
+                        <ul class="nav navbar-nav navbar-right">
+                            <a href="#"><i class="fas fa-cart-plus marcart"></i></a>
+
+                            <li class="dropdown">
+                                <a id="cartD" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    data-ticket="" data-tour="" data-hotel="" data-number="0"
+                                    aria-expanded="false">0</a>
+                                <ul class="dropdown-menu dropdown-cart" id="dropdown-cart" role="menu">
+
+                                    <li class="divider"></li>
+                                    <li><a class="text-center" href="">View Cart</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+
+                <!--<form class="form-inline my-2 my-lg-0" id="fixnav">-->
+                <!--<input class="form-control mr-sm-0" type="search" placeholder="Text here..." aria-label="Search">-->
+                <!--<button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>-->
+                <!--</form>-->
+
+
+                <form class="form-inline my-2 my-lg-0" action="/#">
+                    <div class="input-group">
+                        <input id="seatch" type="search" class="form-control" placeholder="Search...">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text searchbt"><i class="fas fa-search searchbt"></i></span>
+                        </div>
+                    </div>
+                </form>
+
+
+                <a class="navbar-brand" href="#">
+                    <!--<img class="brandICON  infinite animated  bounce delay-2s " src="../images/brand/a3.png">-->
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="row col-md-4 cardH" id="cardH">
+        <!--<div class="col-md-12 ">-->
+        <!--<div class="card flex-md-row mb-4 shadow-sm h-md-250" >-->
+        <!--<div class="card-body d-flex flex-column align-items-start cardHH">-->
+        <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
+        <!--<h3 class="mb-0">-->
+        <!--<a class="text-dark" href="#">Featured post</a>-->
+        <!--</h3>-->
+        <!--<a href="#">Continue reading</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+
+
+    <div class="accordion container md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+        <h2 id="hdr">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingTwo1">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                    aria-expanded="false" aria-controls="collapseTwo1">
+                    <h5 class="mb-0">
+                        WHEN WILL I GET MY LOAD IN DETAILS?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    Load in details will be emailed no later than the week of the festival. See load in details email
+                    date on festival page. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingThree31">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
+                    aria-expanded="false" aria-controls="collapseThree31">
+                    <h5 class="mb-0 n1">
+                        CAN I PASS OUR FLYERS OR PROMOTIONAL ITEMS INSIDE THE VENUE? WHAT ABOUT OUTSIDE?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    No. Anyway, marketing is totally overrated… and you should be trying to use less paper.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFour41">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseFour41"
+                    aria-expanded="false" aria-controls="collapseFour41">
+                    <h5 class="mb-0 2">
+                        I PURCHASED PASSES FOR BOTH WEEKS. CAN I PUT THEM BOTH ON AT THE SAME TIME?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseFour41" class="collapse" role="tabpanel" aria-labelledby="headingFour41"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    No. Only wear one wristband at a time. If you wear more than one wristband, the scanners will be
+                    unable to read them properly and you will not be able to enter the festival. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFive51">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseFive51"
+                    aria-expanded="false" aria-controls="collapseFive51">
+                    <h5 class="mb-0">
+                        DO I NEED TO BUY A FESTIVAL PASS OR TICKET?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseFive51" class="collapse" role="tabpanel" aria-labelledby="headingFive51"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    No. There is no admission fee to take part in some Festival. Many of the events are free! Tickets
+                    are required for a few festival.If you’d like to spectate at these events, you’ll need to have a
+                    pass to uplift.
+                    Be sure to check out individual event pages to see which events are free, ticketed, or require
+                    mountain access.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingSix61">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseSix61"
+                    aria-expanded="false" aria-controls="collapseSix61">
+                    <h5 class="mb-0">
+                        HOW WILL THE PATRONS PAY FOR FOOD?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseSix61" class="collapse" role="tabpanel" aria-labelledby="headingSix61"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    All transactions will be on a cash basis. Each Restaurant is responsible for collecting money
+                    directly. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingSeven71">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseSeven71"
+                    aria-expanded="false" aria-controls="collapseSeven71">
+                    <h5 class="mb-0">
+                        WHEN WILL I FIND OUT IF I AM ACCEPTED INTO AN EVENT?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseSeven71" class="collapse" role="tabpanel" aria-labelledby="headingSeven71"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    Acceptance emails will be sent 1 week after the application deadline. See application deadline on
+                    event page. We will still accept late applicants. Please check the website to see if spaces are sold
+                    out. There will be a $50 late fee if applying after the deadline. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingEight81">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseEight81"
+                    aria-expanded="false" aria-controls="collapseEight81">
+                    <h5 class="mb-0">
+                        WILL YOU BE POSTING SET TIMES IN ADVANCE?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseEight81" class="collapse" role="tabpanel" aria-labelledby="headingEight81"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    Yes. Set times will be posted on the website and mobile app a couple days before the festival. Set
+                    times will also be available in the festival guide passed out on entry. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingNine91">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseNine91"
+                    aria-expanded="false" aria-controls="collapseNine91">
+                    <h5 class="mb-0">
+                        WHAT ARE YOU DOING TO ENSURE MY SAFETY AT THE FESTIVAL?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseNine91" class="collapse" role="tabpanel" aria-labelledby="headingNine91"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    Security and safety are of utmost importance. We work hand in hand with relevant law enforcement and
+                    public protection agencies to help ensure the safety of our event, but because of those very same
+                    concerns, we are unable to publicly comment on any specific actions which are taken. </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" role="tab" id="headingTen101">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTen101"
+                    aria-expanded="false" aria-controls="collapseTen101">
+                    <h5 class="mb-0">
+                        I'M A PHOTOGRAPHER FOR MY OWN BLOG . HOW DO I MAKE ARRANGEMENTS FOR A PHOTO PASS?
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseTen101" class="collapse" role="tabpanel" aria-labelledby="headingTen101"
+                data-parent="#accordionEx1">
+                <div class="card-body">
+                    Photo passes will be distributed at the discretion of the festival and cannot be specifically
+                    requested as part of your press application. We will provide syndicated photos from our on-site
+                    festival photographers for use. </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER-->
+    <footer class="container section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-md-6 col-sm-6">
+                    <div class="ftr">
+                        <h2><a href="Home_2.html">Festivals.com</a></h2>
+                        <p>A website which provides information about various festivals which are celebrated around the
+                            world.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 ftr2">
+                    <h5>Contacts</h5>
+                    <dl class="contact-list">
+                        <dt>Address:</dt>
+                        <dd style="color: white"> Da Nang</dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Email:</dt>
+                        <dd><a href="mailto:#">lanhpham19598@gmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Phones:</dt>
+                        <dd><a href="tel:#">+84 0000000000</a> <span>or</span> <a href="tel:#">+84 00000000</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-2 col-sm-6 ftr2">
+                    <h5>Link</h5>
+                    <ul class="nav-list" style="list-style: none">
+                        <li><a href="Sitemap.html">Sitemap</a></li>
+                        <li><a href="www.getbootstrap.com">Get Bootstrap</a></li>
+                        <li><a href="www.w3schools.com">w3school</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters social-container">
+            <div class="col"><a class="social-inner" href="www.facebook.com"><span
+                        class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+            <div class="col"><a class="social-inner" href="www.instagram.com"><span
+                        class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+            <div class="col"><a class="social-inner" href="www.twitter.com"><span
+                        class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+            <div class="col"><a class="social-inner" href="www.youtube.com"><span
+                        class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="../js/Home.js"></script>
+
+
+</body>
+
+</html>

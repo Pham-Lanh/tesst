@@ -1,0 +1,22 @@
+ul{ list-style:none; }
+.stmap{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.stm{
+    padding: 3%;
+    border: groove #D71F87;
+    background-color: white;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.stm h2{
+    text-decoration: underline;
+    color: #D71F87;
+}
+.stm li a{
+    font-size: 20px;
+    margin: 10px 0;
+}
+

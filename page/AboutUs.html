@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Damion" />
+
+    <link rel="stylesheet" href="../css/aboutus.css">
+</head>
+<body>
+
+<!--CHANGE PASSWORD MODAL-->
+<div class="modal fade" id="squarespaceModal2" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" style="z-index: 99999999999999999999999999999999">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <h1> <i class="fas fa-user-tag"></i> Change Password</h1>
+            <form class="email-login">
+                <div class="u-form-group uform">
+                    <h3>Current Password</h3>
+                    <input id="oldPassword" type="password" placeholder="Password"/>
+                </div>
+                <div class="u-form-group uform">
+                    <h3>New Password</h3>
+                    <input id="newPassword" type="password" placeholder="New password"/>
+                </div>
+                <div class="u-form-group uform">
+                    <h3>Confirm Password</h3>
+                    <input id="confPassword" type="password" placeholder=" password"/>
+                </div>
+                <div class="u-form-group uform">
+                    <button id="changepassword" type="button" class="b1" data-toggle="modal" data-dismiss="modal" data-target="#squarespaceModal1">Save</button>
+                </div>
+                <div class="u-form-group uform">
+                    <button  data-dismiss="modal" >Close</button>
+                </div>
+
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--MODAL-->
+<div class="modal fade" id="squarespaceModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" style="z-index: 99999999999999999999999999999999">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <h1 class="bowby1"></h1>
+            <span>
+                <button id="savedata1" type="submit" class="btn btn-success "  data-dismiss="modal" data-save="">OK</button>
+
+            </span>
+
+
+        </div>
+    </div>
+</div>
+
+<!--////////login////-->
+<div class="modal fade  "  id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="lineModalLabel"><i class="fas fa-user-tag"> login</i></h3>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+
+                <!--///-->
+                <div class="lb-header">
+                    <a href="#" class="active" id="login-box-link">Login</a>
+                    <a href="#" id="signup-box-link">Sign Up</a>
+                </div>
+                <div class="social-login">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                        <span> facebook</span>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-google"></i>
+                        <span> Google</span>
+
+                    </a>
+                </div>
+                <form class="email-login">
+                    <div class="u-form-group">
+                        <input id="user1" type="text" placeholder="Username"/>
+                    </div>
+                    <div class="u-form-group">
+                        <input id="pass1" type="password" placeholder="Password"/>
+                    </div>
+                    <div class="u-form-group">
+                        <button type="button" class="b1" data-toggle="modal" data-target="#squarespaceModal1">Log in</button>
+                        <button id="b2" data-dismiss="modal" class="login b2">Close</button>
+                    </div>
+                    <div class="u-form-group">
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                </form>
+                <form class="email-signup">
+                    <div class="u-form-group">
+                        <input id="user2" type="text" placeholder="Username"/><p class="wr1"></p>
+
+                    </div>
+                    <div class="u-form-group">
+                        <input id="pass2" type="password" placeholder="Password"/>
+                    </div>
+                    <div class="u-form-group">
+                        <input id="email" type="email" placeholder="email"/>
+                        <p class="wr2"></p>
+                    </div>
+                    <div class="u-form-group">
+                        <input id="sdt" type="number" placeholder="numberphone"/>
+                    </div>
+                    <div class="u-form-group">
+                        <input id="passC" type="password" placeholder="Confirm Password"/>
+                    </div>
+                    <div class="u-form-group">
+                        <button  type="button" id="signup">Sign Up</button>
+                        <button class="login b2" data-dismiss="modal">Close</button>
+
+                    </div>
+                </form>
+                <!--///-->
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/////////////-->
+<!--//////back to top////////-->
+<a href="#" id="back-to-top" title="Back to top"><i class="fas fa-arrow-circle-up" id="circle"></i></a>
+
+<!--LOGIN NOW + NAVBAR + SLIDE + HEADER-->
+<div class="conten">
+    <div class="container sign " id="sign">
+        <a data-toggle="modal" data-target="#squarespaceModal" class="login" id="login" href="#">Login now</a>
+    </div>
+
+    <!--NAVBAR-->
+    <div class="container navhome has-animation animation-rtl" data-delay="2000">
+        <nav class="navbar navbar-expand-lg navbar-light bg-co navhome">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <!--<img class="brandICON  infinite animated  bounce delay-2s " src="../images/brand/a3.png">-->
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  mr-sm-3" href="Home_2.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-sm-3" href="Nextfestival.html">Next Festivals <i><span class="badge badge-secondary"
+                            style="background-color: #ff0000">HOT</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-sm-3" href="Garelly.html">Garelly </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link mr-sm-3 dropdown-toggle activenav" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item activenav" href="AboutUs.html">About Us</a>
+                            <a class="dropdown-item" href="faq.html">FAQs</a>
+                            <a class="dropdown-item" href="Feedback.html">Feedback</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mr-sm-3">
+                        <a class="nav-link dropdown-toggle user" href="#" id="UserLo" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="updateProfile.html">Update Profile</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#squarespaceModal2" href="#">Change Password</a>
+                            <a class="dropdown-item" href="ManagerCart.html">Manage Cart</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" id="logout" href="#">Logout</a>
+                        </div>
+
+                    <li>
+                        <ul class="nav navbar-nav navbar-right">
+                            <a href="#"><i class="fas fa-cart-plus marcart"></i></a>
+
+                            <li class="dropdown">
+                                <a id="cartD" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-ticket="" data-tour="" data-hotel="" data-number="0" aria-expanded="false">0</a>
+                                <ul class="dropdown-menu dropdown-cart" id="dropdown-cart" role="menu">
+
+                                    <li class="divider"></li>
+                                    <li><a class="text-center" href="">View Cart</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </li>
+                </ul>
+
+                <!--<form class="form-inline my-2 my-lg-0" id="fixnav">-->
+                <!--<input class="form-control mr-sm-0" type="search" placeholder="Text here..." aria-label="Search">-->
+                <!--<button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>-->
+                <!--</form>-->
+
+
+                <form class="form-inline my-2 my-lg-0" action="/#">
+                    <div class="input-group">
+                        <input id="seatch" type="search" class="form-control" placeholder="Search...">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text searchbt"><i class="fas fa-search searchbt"></i></span>
+                        </div>
+                    </div>
+                </form>
+
+
+                <a class="navbar-brand" href="#">
+                    <!--<img class="brandICON  infinite animated  bounce delay-2s " src="../images/brand/a3.png">-->
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="row col-md-4 cardH" id="cardH">
+        <!--<div class="col-md-12 ">-->
+        <!--<div class="card flex-md-row mb-4 shadow-sm h-md-250" >-->
+        <!--<div class="card-body d-flex flex-column align-items-start cardHH">-->
+        <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
+        <!--<h3 class="mb-0">-->
+        <!--<a class="text-dark" href="#">Featured post</a>-->
+        <!--</h3>-->
+        <!--<a href="#">Continue reading</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+
+<!--OURTEAM-->
+<!--<div class="container"></div>-->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">OUR TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Lanh Lanh</h4>
+                                    <p class="card-text">MSSV 111122233</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook" id="abfb"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter" id="abtw"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype" id="absk"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google" id="abgg"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Pham Lanh</h4>
+                                    <p class="card-text">MSSV 111133344</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook" id="abfb2"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter" id="abtw2"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype" id="absk2"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google" id="abgg2"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+        </div>
+    </div>
+</section>
+
+<!--GGMAP-->
+<!-- <div class="container">
+    <h5 class="section-title h1">WHERE WERE WE BEGIN</h5>
+    <div class="row gmap">
+        <div class="col-sm-0 col-md-3"></div>
+        <div class="col-sm-6 col-md-6">
+            <div class="card text-center">
+                <img class="card-img-top" src="../images/brand/sof.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"> Softech Aptech Đà Nẵng</h5>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15335.704037680147!2d108.2224235!3d16.0693289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x24a85e2091f793fc!2zVHJ1bmcgVMOibSDEkMOgbyBU4bqhbyBM4bqtcCBUcsOsbmggVmnDqm4gUXXhu5FjIFThur8gU29mdGVjaCBBcHRlY2g!5e0!3m2!1svi!2s!4v1546600924013" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <a href="https://goo.gl/maps/gCfSUb9Syw42"><address class="font-italic"> 38 Yên Bái, Hải Châu 1, Q. Hải Châu, Đà Nẵng</address></a>
+                </div>
+                <div class="card-footer text-muted">
+                    <div class="row">
+                        <div class="col abcontact">
+                            <a href=""><i class="fas fa-map"></i></a>
+                        </div>
+                        <div class="col abcontact">
+                            <a href="mailto:test@test.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        <div class="col abcontact">
+                            <a href="tel:+842363779779"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!--FOOTER-->
+<footer class="container section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-md-6 col-sm-6">
+                <div class="ftr">
+                    <h2><a  href="Home_2.html">Festivals.com</a></h2>
+                    <p>A website which provides information about various festivals which are celebrated around the world.</p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 ftr2">
+                <h5>Contacts</h5>
+                <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd style="color: white"> Da Nang</dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>Email:</dt>
+                    <dd><a href="mailto:#">lanhpham19598@gmail.com</a></dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>Phones:</dt>
+                    <dd><a href="tel:#">+84 0000000000</a> <span>or</span> <a href="tel:#">+84 00000000</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-md-2 col-sm-6 ftr2">
+                <h5>Link</h5>
+                <ul class="nav-list" style="list-style: none">
+                    <li><a href="Sitemap.html">Sitemap</a></li>
+                    <li><a href="www.getbootstrap.com">Get Bootstrap</a></li>
+                    <li><a href="www.w3schools.com">w3school</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters social-container">
+        <div class="col"><a class="social-inner" href="www.facebook.com"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+        <div class="col"><a class="social-inner" href="www.instagram.com"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+        <div class="col"><a class="social-inner" href="www.twitter.com"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+        <div class="col"><a class="social-inner" href="www.youtube.com"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+</footer>
+
+<script src="../js/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script src="../js/Home.js"></script>
+
+
+</body>
+</html>
